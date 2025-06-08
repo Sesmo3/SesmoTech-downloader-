@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Site Media Downloader</title>
+</head>
+<body>
+  <h2>Download Audio/Video</h2>
+  <form action="/download" method="post">
+    <label>Paste Link:</label><br>
+    <input type="text" name="url" required><br><br>
+
+    <label>Custom File Name:</label><br>
+    <input type="text" name="filename" required><br><br>
+
+    <label>Select Format:</label><br>
+    <select name="format">
+      <option value="mp3">MP3 (Audio)</option>
+      <option value="mp4">MP4 (Video)</option>
+    </select><br><br>
+
+    <button type="submit">Download</button>
+  </form>
+</body>
+</html>
